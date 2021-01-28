@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.contenedorPrincipal {
+  background-image: url(../images/bgPrincipal.jpg);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0px 15px;
+}
+.contenedorPrincipal::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.286);
+}
+/*HEADER*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 0px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+#logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+.nav a {
+  text-decoration: none;
+  margin: 5px;
+  color: #fff;
+}
+/*HEADER*/
+
+/*PAGINA PRINCIPAL*/
+.tituloPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.tituloPrincipal h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+}
+.tituloPrincipal h2 {
+  color: #fff;
+}
+.tituloPrincipal a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  margin-top: 100px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.403);
+}
+/*PAGINA PRINCIPAL*/
+
+/*SERVICIOS*/
+
+/*VUELOS*/
+.areaDeVuelos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.vuelosPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+.tituloVuelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 40%;
+  padding: 20px;
+  margin-right: 20px;
+}
+.tituloVuelos h1 {
+  color: #000;
+  font-size: 50px;
+  margin: 0px 10px;
+}
+.tituloVuelos p {
+  text-align: center;
+  font-size: 20px;
+}
+.imagenVuelos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+.vuelosInformacion {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.vuelo {
+  background: linear-gradient(0deg, rgba(11, 9, 9, 0.5), rgba(11, 9, 9, 0.5)),
+    url(../images/vuelo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vuelo2 {
+  background: linear-gradient(0deg, rgba(11, 9, 9, 0.5), rgba(11, 9, 9, 0.5)),
+    url(../images/vuelo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vuelo3 {
+  background: linear-gradient(0deg, rgba(11, 9, 9, 0.5), rgba(11, 9, 9, 0.5)),
+    url(../images/vuelo3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.drone {
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 20px;
+  z-index: 100;
+}
+.drone h1 {
+  font-size: 40px;
+}
+.infoVuelo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+.infoVuelo p {
+  color: #fff;
+}
+.infoVuelo a {
+  margin-top: 10px;
+  color: #fff;
+}
+/*VUELOS*/
+
+/*CURSOS*/
+
+.cursosPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/bgCursos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tituloCursos {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tituloCursos h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.tituloCursos p {
+  color: #fff;
+  font-size: 20px;
+}
+.infoCursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.curso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33.33%;
+}
+.curso2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33.33%;
+}
+.curso3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33.33%;
+}
+.tituloCurso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/curso1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tituloCurso2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/curso2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tituloCurso3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/curso3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tituloCurso h1 {
+  font-size: 30px;
+  color: #fff;
+  z-index: 100;
+}
+.tituloCurso2 h1 {
+  font-size: 30px;
+  color: #fff;
+  z-index: 100;
+}
+.tituloCurso3 h1 {
+  font-size: 30px;
+  color: #fff;
+  z-index: 100;
+}
+.botonInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: #000;
+}
+.botonInfo a {
+  color: #fff;
+  font-size: 15px;
+  background-color: #2e56a6;
+  padding: 8px;
+}
+/*CURSOS*/
+
+/*TALLERES*/
+
+.talleresPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.tituloTalleres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.tituloTalleres h1 {
+  font-size: 50px;
+}
+.tituloTalleres p {
+  text-align: center;
+  margin-top: 15px;
+  width: 50%;
+}
+.imagenesTalleres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: orange;
+}
+.imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/taller1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imagen p {
+  color: #fff;
+  font-size: 30px;
+}
+.imagen2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/taller2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imagen2 p {
+  color: #fff;
+  font-size: 30px;
+}
+.imagen3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/taller3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imagen3 p {
+  color: #fff;
+  font-size: 30px;
+}
+.imagen4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/taller4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.imagen4 p {
+  color: #fff;
+  font-size: 30px;
+}
+.talleresInformacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  background: url(../images/bgtalleres.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.informacionTituloTalleres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 60%;
+  padding-top: 50px;
+}
+.informacionTituloTalleres h1 {
+  font-size: 60px;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+.informacionTituloTalleres h2 {
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+.talleres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40%;
+}
+.infoTaller {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.225);
+  height: 100%;
+  width: 50%;
+}
+.infoTaller img {
+  height: 100%;
+  width: 50%;
+}
+.infoTaller p {
+  text-align: center;
+  color: #fff;
+}
+.botonesInfoTalleres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.botonesInfoTalleres a {
+  color: #fff;
+  margin-top: 5px;
+}
+.infoTaller img {
+  object-fit: cover;
+}
+/*TALLERES*/
+
+/*EDICIÓN*/
+
+.edicionPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+.columnaEdicion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.columnaEdicion2 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.tituloEdicion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  background-color: #000;
+}
+.tituloEdicion h1 {
+  color: #000000;
+  background: #fff;
+  padding: 15px;
+}
+.tituloEdicion h2 {
+  color: #000000;
+  background: #fff;
+  padding: 15px;
+}
+
+.imagenEdicion1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  background-color: blue;
+}
+.imagenEdicion1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.informacionEdicion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    url(../images/bgEdicion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.edicionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: red;
+  height: 70%;
+
+  background: linear-gradient(
+      180.08deg,
+      #ffffff 26.57%,
+      rgba(255, 255, 255, 0) 99.93%
+    ),
+    rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.imagenEdicion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.imagenEdicion img {
+  height: 100%;
+  border-radius: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.videoInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.videoInfo h2 {
+  width: 60%;
+  text-align: center;
+}
+
+/*EDICIÓN*/
+/*SERVICIOS*/
