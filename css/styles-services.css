@@ -25,6 +25,8 @@ ul {
 .nombreEmpresa {
   margin: 0px 30px;
   font-size: 35px;
+  text-decoration: none;
+  color: #000;
 }
 .botones a {
   text-decoration: none;
