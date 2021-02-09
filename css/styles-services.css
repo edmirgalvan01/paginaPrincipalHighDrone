@@ -11,6 +11,8 @@ ul {
   list-style: none;
   text-align: center;
   margin: 0px 5px;
+  text-align: left;
+  padding: 5px;
 }
 
 /*HEADER*/
@@ -35,6 +37,12 @@ ul {
   background-color: #000;
   margin: 0px 10px;
   border-radius: 8px;
+  transition: 300ms;
+  font-weight: bold;
+}
+.botones a:hover {
+  background-color: rgb(246, 238, 5);
+  color: #000;
 }
 /*HEADER*/
 
@@ -55,7 +63,7 @@ ul {
   background-size: 100%;
   background-attachment: fixed;
   object-fit: contain;
-  background-position: center;
+  background-position: bottom;
 
   display: flex;
   justify-content: center;
@@ -139,6 +147,7 @@ ul {
   align-items: center;
   width: 50%;
   height: 100vh;
+  background-color: #fff;
 }
 .informacionCursos h1 {
   text-align: center;
@@ -157,10 +166,14 @@ ul {
   font-size: 25px;
   padding: 10px;
   margin: 20px 0px;
+  transition: transform 0.2s;
+}
+.informacionCursos a:hover {
+  transform: scale(1.5);
 }
 #galeria {
   font-size: 20px;
-  background-color: #fff;
+  background-color: transparent;
   text-decoration: underline;
 }
 .bodycursosInformacion {
@@ -197,6 +210,10 @@ ul {
   background-color: #fff;
   margin: 0px 20px;
   padding-bottom: 10px;
+  transition: 300ms;
+}
+.lista:hover {
+  box-shadow: 22px 22px 22px 22px rgba(0, 0, 0, 0.25);
 }
 .tituloLista {
   display: flex;
@@ -287,7 +304,12 @@ ul {
   font-size: 25px;
   padding: 10px;
   margin: 20px 0px;
+  transition: transform 0.2s;
 }
+.botonesTalleres a:hover {
+  transform: scale(1.5);
+}
+
 .bodyTalleresInfo {
   display: flex;
   justify-content: row;
@@ -359,6 +381,10 @@ ul {
   background-color: #578497;
   font-size: 25px;
   padding: 10px;
+  transition: transform 0.2s;
+}
+.botonesContactoVuelos a:hover {
+  transform: scale(1.5);
 }
 .informacionVuelos {
   display: flex;
@@ -401,7 +427,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
+  width: 30%;
   height: 100%;
 }
 .tipoDrone p {
@@ -413,7 +439,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
+  width: 60%;
   height: 100%;
 }
 .listaInfoVuelo p {
@@ -422,6 +448,17 @@ ul {
 .listaVuelo img {
   height: 180px;
   width: auto;
+}
+.imagenDroneVuelo {
+  height: auto;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagenDroneVuelo {
+  object-fit: cover;
+  height: 100%;
 }
 /*VUELOS*/
 
@@ -468,6 +505,10 @@ ul {
   background-color: #578497;
   font-size: 25px;
   padding: 10px;
+  transition: transform 0.2s;
+}
+.botonesEdicion a:hover {
+  transform: scale(1.5);
 }
 .imagenesEdicionPrincipal {
   display: flex;
@@ -517,12 +558,81 @@ ul {
     ),
     url(../images-services/edicion3.jpg);
   margin: 15px;
-  width: 60%;
-  height: 40%;
+  width: 70%;
+  height: 42%;
 }
 .imagenEdicion p {
   width: 50%;
   text-align: center;
   color: #fff;
   font-size: 20px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  ul {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .tituloLista h2 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .imagenDroneVuelo img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .imagenEdicion p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .ejemplo p {
+    font-size: 13px;
+  }
+  ul {
+    font-size: 12px;
+  }
+  .tituloLista h2 {
+    font-size: 12px;
+  }
+  .imagenDroneVuelo img {
+    height: 100%;
+    width: 100%;
+  }
+  .infoTituloVuelos h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .informacionCursos h1 {
+    font-size: 25px;
+  }
+  .informacionCursos p {
+    font-size: 18px;
+  }
+  .botonesTalleres h1 {
+    font-size: 25px;
+  }
+  .botonesTalleres p {
+    font-size: 18px;
+  }
+  .lista {
+    width: 25%;
+    height: 90%;
+  }
+  ul {
+    font-size: 12px;
+  }
+  .ejemplo p {
+    width: 70%;
+  }
+  .imagenEdicion p {
+    font-size: 12px;
+  }
+  .botones a {
+    margin: 0 5px;
+  }
 }

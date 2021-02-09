@@ -6,13 +6,17 @@
 }
 html {
   scroll-behavior: smooth;
+  box-sizing:border-box;
+  
 }
 .contenedorPrincipal {
   background-image: url(../images/bgPrincipal.jpg);
   background-repeat: no-repeat;
   object-fit: contain;
   background-size: 100%;
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +24,7 @@ html {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+  max-height: 100vh;
   padding: 0px 15px;
 }
 .contenedorPrincipal::before {
@@ -54,7 +59,7 @@ html {
 }
 .nav a {
   text-decoration: none;
-  margin: 5px;
+  margin: 0px 17px;
   color: #000;
   font-size: 18px;
   font-weight: bold;
@@ -73,8 +78,9 @@ html {
 }
 .tituloPrincipal h1 {
   font-size: 70px;
-  font-weight: bold;
   color: #fff;
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
 }
 .tituloPrincipal h2 {
   color: #fff;
@@ -84,18 +90,18 @@ html {
   font-size: 20px;
   color: #fff;
   margin-top: 100px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   font-weight: bold;
   padding: 10px;
   /* background-color: rgb(65, 178, 220); */
-  background-color: rgb(69, 69, 69);
+  background-color: #2e56a6;
   border-radius: 10px;
   transition: 400ms;
 }
 .tituloPrincipal a:hover {
   color: #000;
   background-color: rgb(246, 238, 5);
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 /*PAGINA PRINCIPAL*/
 
@@ -133,6 +139,7 @@ html {
   color: #000;
   font-size: 50px;
   margin: 0px 10px;
+  text-align: center;
 }
 .tituloVuelos p {
   text-align: center;
@@ -212,6 +219,7 @@ html {
 }
 .infoVuelo p {
   color: #fff;
+  text-align: center;
 }
 .infoVuelo a {
   margin-top: 10px;
@@ -297,9 +305,10 @@ html {
   align-items: center;
   width: 70%;
   height: 100%;
+  text-align: center;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/curso1.jpg);
+    url(../images/curso2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -312,11 +321,12 @@ html {
   width: 70%;
   height: 100%;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),
-    url(../images/curso2.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/curso1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 .tituloCurso3 {
   display: flex;
@@ -326,11 +336,12 @@ html {
   width: 70%;
   height: 100%;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/curso3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 .tituloCurso h1 {
   font-size: 30px;
@@ -387,15 +398,16 @@ html {
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 100%;
+  height: 50%;
+  padding: 20px;
 }
 .tituloTalleres h1 {
   font-size: 50px;
+  text-align: center;
 }
 .tituloTalleres p {
   text-align: center;
   margin-top: 15px;
-  width: 50%;
 }
 .imagenesTalleres {
   display: flex;
@@ -404,7 +416,6 @@ html {
   align-items: center;
   width: 50%;
   height: 100%;
-  background-color: orange;
 }
 .imagen {
   display: flex;
@@ -485,6 +496,16 @@ html {
   width: 100%;
   height: 100vh;
   background: #000;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.308)),
+    url(../images/bgInfoTalleres.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .informacionTituloTalleres {
   display: flex;
@@ -511,7 +532,7 @@ html {
   width: 100%;
   height: 40%;
 
-  background-color: #FFF;
+  background-color: #fff;
 }
 .infoTaller {
   display: flex;
@@ -537,11 +558,16 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 .botonesInfoTalleres a {
   color: #000;
   font-weight: bold;
   margin-top: 5px;
+  transition: 300ms;
+}
+.botonesInfoTalleres a:hover {
+  color: rgb(246, 238, 5);
 }
 .infoTaller img {
   object-fit: cover;
@@ -586,11 +612,13 @@ html {
   color: #000000;
   background: #fff;
   padding: 15px;
+  text-align: center;
 }
 .tituloEdicion h2 {
   color: #000000;
   background: #fff;
   padding: 15px;
+  text-align: center;
 }
 
 .imagenEdicion1 {
@@ -600,7 +628,6 @@ html {
   align-items: center;
   height: 60%;
   width: 100%;
-  background-color: blue;
 }
 .imagenEdicion1 img {
   height: 100%;
@@ -616,10 +643,14 @@ html {
   width: 100%;
 
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
-    url(../images/bgEdicion.jpg);
-  background-repeat: no-repeat;
+    url(../images/bgEdicion.jpg) no-repeat fixed center;
+  /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .edicionCard {
   display: flex;
@@ -627,8 +658,8 @@ html {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: red;
   height: 70%;
+  width: 20%;
 
   background: linear-gradient(
       180.08deg,
@@ -648,7 +679,8 @@ html {
 }
 .imagenEdicion img {
   height: 100%;
-  border-radius: 50px;
+  width: 70%;
+  object-fit: cover;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .videoInfo {
@@ -666,7 +698,265 @@ html {
 .videoInfo a {
   color: #fff;
   margin-top: 10px;
+  transition: 300ms;
+}
+.videoInfo a:hover {
+  color: rgb(246, 238, 5);
+}
+/*EDICIÓN*/
+
+/*SERVICIOS*/
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1000px) {
+  .informacionEdicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .edicionCard {
+    flex-direction: row;
+    height: 22%;
+    width: 80%;
+  }
+  .imagenEdicion {
+    width: 50%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .drone {
+    width: 70%;
+  }
+  .drone h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .infoVuelo p {
+    width: 70%;
+  }
+  .vuelosPrincipal {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .tituloVuelos {
+    width: 30%;
+  }
+  .tituloVuelos h1 {
+    font-size: 35px;
+  }
+  .tituloVuelos p {
+    font-size: 15px;
+  }
+
+  .tituloTalleres {
+    width: 30%;
+  }
+  .tituloTalleres h1 {
+    font-size: 35px;
+  }
+  .tituloTalleres p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav a {
+    margin: 0px 8px;
+  }
+  .vuelosPrincipal {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tituloVuelos {
+    width: 70%;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+  .imagenVuelos img {
+    height: 400px;
+  }
+  .botonInfo a {
+    font-size: 15px;
+  }
+  .drone h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .drone h1 {
+    font-size: 15px;
+  }
+  .infoVuelo a {
+    font-size: 10px;
+  }
+  .tituloCursos h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .botonesInfoTalleres p {
+    font-size: 12px;
+  }
+  .botonesInfoTalleres a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav a {
+    margin: 0px 5px;
+  }
+}
+.tituloCurso .tituloCurso2 .tituloCurso3 h1 {
+  font-size: 20px;
+}
+.botonInfo a {
+  font-size: 10px;
+}
+.videoInfo h2 {
+  font-size: 20px;
+}
+.videoInfo a {
+  font-size: 15px;
+}
+@media screen and (max-width: 550px) {
+  .nav a {
+    font-size: 15px;
+  }
+  .infoVuelo p {
+    font-size: 12px;
+  }
+  .tituloCurso h1 {
+    font-size: 20px;
+  }
+  .tituloCurso2 h1 {
+    font-size: 20px;
+  }
+  .tituloCurso3 h1 {
+    font-size: 20px;
+  }
+  .talleresPrincipal {
+    flex-direction: column;
+  }
+  .tituloTalleres {
+    width: 100%;
+    height: 40%;
+  }
+  .imagenesTalleres {
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+  }
+  .informacionTituloTalleres h1 {
+    font-size: 50px;
+  }
+  .talleres {
+    flex-direction: column;
+  }
+  .infoTaller {
+    height: 33.33%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav a {
+    font-size: 15px;
+    margin: 0px 2px;
+  }
+  .videoInfo h2 {
+    font-size: 15px;
+  }
+  .videoInfo a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .tituloPrincipal h1 {
+    text-align: center;
+    font-size: 50px;
+    background-position: center;
+  }
+  .imagenVuelos {
+    width: 100%;
+  }
+  .drone h1 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .infoVuelo a {
+    font-size: 10px;
+  }
+  .tituloCursos h1 {
+    font-size: 40px;
+  }
+  .curso {
+    flex-direction: column;
+  }
+  .curso2 {
+    flex-direction: column;
+  }
+  .curso3 {
+    flex-direction: column;
+  }
+  .tituloCurso {
+    width: 100%;
+    padding: 20px;
+  }
+  .tituloCurso2 {
+    width: 100%;
+    padding: 20px;
+  }
+  .tituloCurso3 {
+    width: 100%;
+    padding: 20px;
+  }
+  .botonInfo a {
+    font-size: 15px;
+  }
+  .botonInfo {
+    width: 100%;
+  }
+  .edicionPrincipal {
+    flex-direction: column;
+  }
+  .columnaEdicion {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+  .columnaEdicion2 {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+  .informacionTituloTalleres h1 {
+    font-size: 40px;
+  }
+  .tituloEdicion h1 {
+    font-size: 20px;
+  }
+  .tituloEdicion h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imagenVuelos {
+    width: 100%;
+  }
+  .imagenVuelos img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .drone {
+    width: 90%;
+  }
+  .drone h1 {
+    font-size: 10px;
+  }
 }
 
-/*EDICIÓN*/
-/*SERVICIOS*/
+/*RESPONSIVE*/
