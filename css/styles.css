@@ -962,6 +962,9 @@ header label:hover {
   }
 }
 @media screen and (max-width: 400px) {
+  .vuelosPrincipal {
+    height: 100vh;
+  }
   .imagenVuelos {
     width: 100%;
   }

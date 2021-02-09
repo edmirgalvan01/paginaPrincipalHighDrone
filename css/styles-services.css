@@ -17,9 +17,7 @@ ul {
 /*HEADER*/
 header {
   width: 100%;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
+  display: block;
   align-items: center;
 }
 #btn-menu {
@@ -736,7 +734,7 @@ header label:hover {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
     width: 30%;
-    margin-left: -70%;
+    margin-left: -500%;
     transition: all 0.5s;
   }
   .menu ul {
