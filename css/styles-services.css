@@ -14,35 +14,46 @@ ul {
   text-align: left;
   padding: 5px;
 }
-
 /*HEADER*/
-.header {
+header {
+  width: 100%;
+  height: 15vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 12vh;
 }
-.nombreEmpresa {
-  margin: 0px 30px;
-  font-size: 35px;
-  text-decoration: none;
+#btn-menu {
+  display: none;
+}
+header label {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  border-right: 1px solid #fff;
+}
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menu li a {
+  display: block;
+  padding: 20px;
   color: #000;
-}
-.botones a {
   text-decoration: none;
-  padding: 7px;
-  color: #fff;
-  background-color: #000;
-  margin: 0px 10px;
-  border-radius: 8px;
-  transition: 300ms;
-  font-weight: bold;
-}
-.botones a:hover {
-  background-color: rgb(246, 238, 5);
-  color: #000;
+  font-size: 15px;
 }
 /*HEADER*/
 
@@ -138,7 +149,7 @@ ul {
 .imagenesCursos img {
   height: 100%;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 .informacionCursos {
   display: flex;
@@ -578,6 +589,9 @@ ul {
   .tituloLista h2 {
     font-size: 15px;
   }
+  .imagenPrincipal {
+    background-position: top;
+  }
 }
 @media screen and (max-width: 900px) {
   .imagenDroneVuelo img {
@@ -604,6 +618,20 @@ ul {
   }
   .infoTituloVuelos h1 {
     text-align: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .informacionCursos h1 {
+    font-size: 30px;
+  }
+  .informacionCursos p {
+    font-size: 20px;
+  }
+  .botonesTalleres h1 {
+    font-size: 30px;
+  }
+  .botonesTalleres p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -634,5 +662,213 @@ ul {
   }
   .botones a {
     margin: 0 5px;
+  }
+  .tituloVuelos h1 {
+    font-size: 30px;
+  }
+  .botonesVuelos p {
+    font-size: 15px;
+  }
+  .infoTituloVuelos h1 {
+    font-size: 30px;
+  }
+  .titulo h1 {
+    font-size: 40px;
+  }
+  .titulo h2 {
+    font-size: 20px;
+  }
+  .imagenPrincipal {
+    background-position: top;
+  }
+  .bodycursosInformacion {
+    height: 200vh;
+    justify-content: start;
+  }
+  .listasCursos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #listaTalleres {
+    width: 40%;
+    margin: 20px 10px;
+  }
+  #listaTalleres ul {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .botones a {
+    font-size: 12px;
+  }
+  .imagenPrincipal p {
+    font-size: 35px;
+  }
+  .tituloInformacionPrincipal h1 {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+  }
+  .cursosPrincipal {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .informacionCursos {
+    height: 60%;
+  }
+  .informacionCursos h1 {
+    width: 100%;
+  }
+  .informacionCursos p {
+    width: 100%;
+  }
+  .imagenesCursos {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+  }
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 30%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li a {
+    color: #FFF;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .tituloInformacionPrincipal h1 {
+    font-size: 25px;
+  }
+  .ejemplo img {
+    height: 60px;
+    width: 60px;
+  }
+  .ejemplo p {
+    text-align: center;
+    width: 100%;
+  }
+  .tituloCursosInfo {
+    font-size: 15px;
+    text-align: center;
+    width: 70%;
+  }
+  #listaTalleres ul {
+    font-size: 12px;
+  }
+  .talleresPrincipal {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .botonesTalleres {
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+  }
+  .imagenTalleres {
+    width: 100%;
+    height: 60%;
+  }
+  .tituloVuelos h1 {
+    font-size: 25px;
+  }
+  .botonesVuelos p {
+    font-size: 15px;
+  }
+  .tipoDrone p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .botones a {
+    margin: 0px 2px;
+    font-size: 13px;
+  }
+  .bodyTalleresInfo {
+    height: 200vh;
+  }
+  #listaCursos {
+    width: 40%;
+    margin: 20px 10px;
+  }
+  #listaCursos ul {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tituloInformacionPrincipal h1 {
+    font-size: 20px;
+  }
+  .nombreEmpresa {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  .ejemplo {
+    padding: 0;
+    margin: 0px 30px;
+  }
+  .ejemplo p {
+    font-size: 10px;
+  }
+  .tituloCursosInfo {
+    font-size: 12px;
+  }
+  .botonesContactoVuelos a {
+    font-size: 15px;
+  }
+  .titulo h1 {
+    font-size: 25px;
+  }
+  .titulo h2 {
+    font-size: 20px;
+  }
+  .botonesEdicion a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  ul {
+    font-size: 9px;
+  }
+  .ejemplo {
+    margin: 0 30px;
+  }
+  .ejemplo img {
+    height: 50px;
+    width: 50px;
+  }
+  .imagenesCursos img {
+    width: auto;
+  }
+  .tipoDrone p {
+    font-size: 12px;
+  }
+  .imagenEdicion p {
+    text-align: left;
+    width: 70%;
+  }
+  .tituloVuelos h1 {
+    font-size: 18px;
+  }
+  .botonesVuelos p {
+    font-size: 10px;
+  }
+  .titulo h2 {
+    font-size: 15px;
   }
 }
